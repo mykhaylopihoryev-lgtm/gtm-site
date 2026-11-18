@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://googletagmanager.com;
+    })(window,document,'script','dataLayer','GTM-WPTKVRR3');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <title>Мой сайт-визитка | Контакты</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+        nav { background: #333; padding: 10px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        .content { max-width: 800px; margin: 20px auto; }
+        .form-box { background: #f4f4f4; padding: 30px; border-radius: 8px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { padding: 10px 20px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://googletagmanager.com"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="articles.html">Статьи</a>
+        <a href="contact.html">Контакты</a>
+    </nav>
+
+    <div class="content">
+        <h1>Связаться со мной</h1>
+        <p>Вы можете написать мне в <a href="https://telegram.org" target="_blank">Telegram</a> или отправить сообщение через форму ниже:</p>
+        
+        <div class="form-box">
+            <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-status').style.display='block';">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Иван">
+                
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Привет! Тестирую GTM..."></textarea>
+                
+                <button type="submit" id="submit-btn">Отправить сообщение</button>
+            </form>
+            <p id="form-status" style="display:none; color: green; font-weight: bold; margin-top: 15px;">Спасибо! Ваше сообщение успешно отправлено.</p>
+        </div>
+    </div>
+</body>
+</html>
